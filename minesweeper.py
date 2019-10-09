@@ -135,6 +135,7 @@ class MineSweeper(object):
 
     # uncover all its neighbors.
     def update_board(self, square):
+        bas_case_flag = True;
         # Base case: reached a square that was previously uncovered. So, just return.
         if square.isUncovered == True:
             return
